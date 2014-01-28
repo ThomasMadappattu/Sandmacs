@@ -1,7 +1,7 @@
 Sandmacs
 ========
 
-Yet Anothoer Public domain emacs fork.
+Yet Another Public domain emacs fork.
 
 <pre>
                  Sandman Emacs
