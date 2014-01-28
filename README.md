@@ -3,6 +3,7 @@ Sandmacs
 
 Yet Anothoer Public domain emacs fork.
 
+<pre>
                  Sandman Emacs
 
 M- means to use the <ESC> key prior to using another key
@@ -146,3 +147,4 @@ M-Z Write out all changed buffers automatically and exit.
 ^L Redraws the screen completely.
 ^X = Position report; displays line number, buffer size, etc.
 
+</pre>
