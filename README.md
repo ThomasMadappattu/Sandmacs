@@ -8,7 +8,7 @@ Yet Anothoer Public domain emacs fork.
 M- means to use the <ESC> key prior to using another key
 ^A means to use the control key at the same time as the 'A' key
 
-------------------------------------------------------------------------------
+
                          MOVING THE CURSOR
 
 ^F Forward character                 M-F Forward word
@@ -20,14 +20,12 @@ M- means to use the <ESC> key prior to using another key
 ^V or [Page Down] Scroll down
 M-V or [Page Up] Scroll up                Arrow keys are active
 
-------------------------------------------------------------------------------
                          DELETING & INSERTING
 
 <- Delete previous character         M-<- Delete previous word
 ^D Delete next character                M-D Delete next word
 ^K Delete to end of line                ^O Insert line
 
-------------------------------------------------------------------------------
                  FORMATTING & TRANSPOSING
 
 M-U UPPERCASE word                        M-C Capitalize word
@@ -37,14 +35,14 @@ M-Q Format paragraph so that text is left-justified between margins.
 ^X F Set the right margin for paragraph formatting to the current position of
      the cursor.
 
-------------------------------------------------------------------------------
+
                          SEARCHING
 
 ^S Search forward from cursor position. Type in a string and end it with
      ESC. Either case matches.
 ^R As above, but reverse search from cursor position.
 
-------------------------------------------------------------------------------
+
                          REPLACING
 
 M-R Replace all instances of first typed-in string with second typed-in
@@ -55,7 +53,6 @@ M-% Replace with query. Answer with:
         . exit and return to entry point
         ^G,'q' or <return> exit and remain at current location
 
-------------------------------------------------------------------------------
                          COPYING AND MOVING
 
 ^@ or M-<spacebar> Set mark at current position.
@@ -73,7 +70,7 @@ Generally, the procedure for copying or moving text is:
 2) Delete it (with ^W) or copy it (with M-W) into the kill buffer.
 3) Move the cursor to the desired location and yank it back (with ^Y).
 
-------------------------------------------------------------------------------
+
                          MULTIPLE BUFFERS
 
 A buffer contains a COPY of a document being edited, and must be saved for
@@ -86,7 +83,7 @@ changes to be kept. Many buffers may be activated at once.
 ^X N Change the filename associated with the buffer.
 M-N Change the name of the buffer.
 
-------------------------------------------------------------------------------
+
                          READING FROM DISK
 
 ^X^F Find file; read into a new buffer created from filename.
@@ -95,7 +92,7 @@ M-N Change the name of the buffer.
       No new buffer will be created.
 ^X^I Insert file into current buffer at cursor's location.
 
-------------------------------------------------------------------------------
+
                          SAVING TO DISK
 
 ^X^S Save current buffer to disk, using the buffer's filename as the name of
@@ -103,7 +100,7 @@ M-N Change the name of the buffer.
 ^X^W Write current buffer to disk. Type in a new filename at the prompt to
       write to; it will also become the current buffer's filename.
 
-------------------------------------------------------------------------------
+
                          MULTIPLE WINDOWS
 
 Many windows may be visible at once on the screen. Windows may show different
@@ -113,20 +110,17 @@ parts of the same buffer, or each may display a different one.
 ^X O Move cursor to next window        ^X ^ Enlarge current window
 M-^V Scroll other window down                M-^Z Scroll other window up
 
-------------------------------------------------------------------------------
                          EXITING
 
 ^X^C Exit. Any unsaved files will require confirmation.
 M-Z Write out all changed buffers automatically and exit.
 
-------------------------------------------------------------------------------
                                 MACROS
 
 ^X ( Start recording a keyboard macro. Typing ^G or an error aborts.
 ^X ) Stop recording macro.
 ^X E Execute macro.
 
-------------------------------------------------------------------------------
                          REPEAT & NUMBER PREFIX
 
 ^U<number> or M-<number>
@@ -145,11 +139,10 @@ M-Z Write out all changed buffers automatically and exit.
     Enlarge a split window by <number> rows. A negative number shrinks the
     window.
 
-------------------------------------------------------------------------------
+
                          SPECIAL KEYS
 
 ^G Cancel current command.
 ^L Redraws the screen completely.
 ^X = Position report; displays line number, buffer size, etc.
 
-----------------------------------------------------------------------------
